@@ -1,0 +1,115 @@
+/* styles.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f7fa;
+}
+
+#title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+#description {
+    text-align: center;
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+#survey-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.clue {
+    font-weight: normal;
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.radio-group,
+.checkbox-group {
+    margin-top: 10px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 640px) {
+    #survey-form {
+        padding: 20px;
+    }
+}
