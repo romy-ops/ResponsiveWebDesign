@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Conference Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Tech Innovators Conference 2023</h1>
+    <p id="description">Help us improve future events by sharing your experience</p>
+    
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+        
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        
+        <div class="form-group">
+            <label id="number-label" for="number">Age <span class="clue">(optional)</span></label>
+            <input type="number" id="number" name="age" min="13" max="120" placeholder="Age">
+        </div>
+        
+        <div class="form-group">
+            <label>Which session track did you attend most?</label>
+            <select id="dropdown" name="track" required>
+                <option disabled selected value>Select a track</option>
+                <option value="ai">Artificial Intelligence</option>
+                <option value="web">Web Development</option>
+                <option value="data">Data Science</option>
+                <option value="iot">IoT & Hardware</option>
+                <option value="cyber">Cybersecurity</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label>How likely are you to recommend this conference?</label>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="recommend" value="definitely" checked>
+                    Definitely
+                </label>
+                <label>
+                    <input type="radio" name="recommend" value="probably">
+                    Probably
+                </label>
+                <label>
+                    <input type="radio" name="recommend" value="not-sure">
+                    Not sure
+                </label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label>What did you enjoy most? (Check all that apply)</label>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" name="liked" value="keynotes">
+                    Keynote speeches
+                </label>
+                <label>
+                    <input type="checkbox" name="liked" value="workshops">
+                    Hands-on workshops
+                </label>
+                <label>
+                    <input type="checkbox" name="liked" value="networking">
+                    Networking opportunities
+                </label>
+                <label>
+                    <input type="checkbox" name="liked" value="expo">
+                    Tech expo
+                </label>
+                <label>
+                    <input type="checkbox" name="liked" value="food">
+                    Food & beverages
+                </label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="comments">Additional comments or suggestions</label>
+            <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+        </div>
+        
+        <div class="form-group">
+            <button type="submit" id="submit">Submit Feedback</button>
+        </div>
+    </form>
+</body>
+</html>
